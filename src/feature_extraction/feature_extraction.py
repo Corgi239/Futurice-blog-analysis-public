@@ -46,11 +46,11 @@ def main():
 
     # Lift scores
     print("Calculating lift scores...")
-    df = extract_lift_scores(df)
+    # df = extract_lift_scores(df)
     print("Completed")
 
     # Save the final result
-    df.to_csv("data/final/futurice_blog_data.csv")
+    df.to_csv("data/final/futurice_blog_data.csv", sep='\t', index=False)
     print("Finished")
 
 

@@ -32,7 +32,7 @@ st.set_page_config(
 data = fetch_data()
 
 # Configuration of plottable features
-numeric_features = data.drop(['index'], axis=1).select_dtypes(include=['number', 'datetime']).columns
+numeric_features = data.select_dtypes(include=['number', 'datetime']).columns
 categorical_features = ['category', 'year']
 
 # Define display names for features
