@@ -5,9 +5,9 @@ st.set_page_config(
     page_icon="👋",
 )
 
-st.write("# Welcome to Project 🅱️log")
+st.write("# Futurice blog analysis demo")
 
-st.sidebar.success("Choose your functionality :D")
+st.sidebar.success("Choose your functionality")
 
 st.markdown(
     """
@@ -16,9 +16,17 @@ st.markdown(
     **👈 Choose your functionality from the sidebar** to see a demo.
     
     ### Pages
-    - Visual
-    - Keyword Popularity
-    - Dynamic Topic Modelling
-    - Blog Doctor
+
+    * General Dashboard
+        * Explore features of existing blogs with customizable filters
+        * Spot interesting trends and feature interactions
+    * Blog Doctor
+        * Analyze the features of your next blog
+        * Check how your next blog lines up against existing popular blogs
+    * Dynamic Topic Modelling
+        * Discover topic structures within Futurice's blog collection
+    * Keyword Popularity
+        * View an interactive summary of how the popularity of different keywords changed over time
+
 """
 )

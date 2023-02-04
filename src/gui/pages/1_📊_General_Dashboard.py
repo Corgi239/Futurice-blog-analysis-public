@@ -10,6 +10,7 @@ from bokeh.palettes import Category20
 # import trend_graph
 
 
+
 GOOGLE_ANALYTICS_START_DATE = datetime.date(2019,9,13)
 
 # Method for importing data from a local CSV
