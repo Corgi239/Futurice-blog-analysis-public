@@ -30,7 +30,6 @@ def combine_data(output_path):
 
     # Combine the two tables
     combined = pd.merge(blogs, analytics, how='inner', on='url')
-    combined.reset_index(inplace=True)
 
     # Drop entires that do not have urls, pageviews, or text
     combined = combined.dropna(subset=['url', 'pageviews', 'text'])
