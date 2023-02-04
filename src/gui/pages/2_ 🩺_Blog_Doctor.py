@@ -100,11 +100,6 @@ def analyze(blogtext):
         'text_length',
         'length of the blog text, measured in words'
     )
-    out['average sentence length'] = (
-        avg_sent_length(blogtext), 
-        'average_sentence_length',
-        'average length of sentences in the blog text, measured in words'
-    )
     out['Flesch readability score'] = (
         flesch(blogtext),
         'flesch',
@@ -198,7 +193,7 @@ with input:
         if submitted:
             with output:
                 st.markdown("🟢 - *all good*, 🟠 - *worth a second look*, 🔵 - *not relevant*")
-                st.write("ⓘ", tooltip="Feature importance based on regression analysis")
+                st.info("Feature importance based on regression analysis")
                 expanders = {}
                 analysis = analyze(blogtext)
                 for key, value in analysis.items():
