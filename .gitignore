@@ -1,4 +1,4 @@
-notebooks/experimentation/testing.ipynb
+notebooks/data_scraping/testing.ipynb
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -132,3 +132,4 @@ dmypy.json
 
 # MacOS specific stuff
 .DS_Store
+notebooks/data_scraping/testing.ipynb
