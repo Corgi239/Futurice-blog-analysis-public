@@ -4,7 +4,7 @@
 
 As a means of bolstering sales, marketing, and talent acquisition efforts, the Finnish consulting company Futurice frequently publishes blogs created by the company's employees. Blogs serve as one of the company's public outreach channels and thus constitute an integral part of Futurice's brand, as well as play a pivotal role in attracting targeted clients and talent, establishing and maintaining business relationships with customers and other companies. However, writing timely, engaging blogs is challenging, even with the help of existing practices, such as search engine optimization. In this project we analyzed past blogs from Futurice to provide an overview of their history and context and to leverage gathered information for a simple recommendation system. 
 
-As an output of the project, we have constructed an [interactive web page](https://corgi239-futurice-blog-analysis-public-srcguihome-t16z9r.streamlit.app/) that showcases results obtained from the conducted analysis, offers an online blog editing assistant, and houses a rich visualization tool where users can explore relevant statistics about past blogs.
+As an output of the project, we have constructed an [interactive web page](https://corgi239-futurice-blog-analysis-public-srcguihome-uzy4md.streamlit.app/) that showcases results obtained from the conducted analysis, offers an online blog editing assistant, and houses a rich visualization tool where users can explore relevant statistics about past blogs.
 
 A comprehensive report can be found in `reports/pdf/`.
 
@@ -14,7 +14,7 @@ Some of the data used for this project was provided directly by Futurice under a
 
 ## Demo
 
-An [online interactive demo](https://corgi239-futurice-blog-analysis-public-srcguihome-t16z9r.streamlit.app/) is available through Streamlit Could service. If the app has not been opened for a while it might require a minute or two to spin up.
+An [online interactive demo](https://corgi239-futurice-blog-analysis-public-srcguihome-uzy4md.streamlit.app/) is available through Streamlit Could service. If the app has not been opened for a while it might require a minute or two to spin up.
 
 ## Credits
 
