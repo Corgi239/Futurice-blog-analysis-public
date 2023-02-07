@@ -101,7 +101,7 @@ def analyze(blogtext):
         'length of the blog text, measured in words'
     )
     out['average sentence length'] = (
-        avg_sent_length(blogtext), 
+        round(avg_sent_length(blogtext), 2), 
         'average_sentence_length',
         'average length of sentences in the blog text, measured in words'
     )
