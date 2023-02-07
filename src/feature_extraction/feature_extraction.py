@@ -75,6 +75,17 @@ def extract_basic_text_stats(df):
     sum_df = [ np.sum([len(chunk) for chunk in spliting]) for spliting in splitted_df ]
     df['text_length'] = np.array(sum_df)
 
+    # Average sentence length
+    texts = df["text"].astype(str)
+    sents_df = [sent_tokenize(sent) for sent in texts]
+    sents_df = [ [re.sub(pattern="\d+[.]",repl="", string=sent.strip()) for sent in sent_df] for sent_df in sents_df ]
+    sents_df = [ [re.sub(pattern="[^a-zA-Z0-9\s]",repl="", string=sent) for sent in sent_df] for sent_df in sents_df ]
+    res_df = [ [ sent.strip().replace('\r', '.').replace('\n', '.').split('.') for sent in sent_df if sent != "" ] for sent_df in sents_df ]
+    res_df = [ [sentence.strip() for sentences in bunch for sentence in sentences if sentence != ''] for bunch in res_df ]
+    splitted_df = [ [ [char for char in sent.split(" ") if char != ""] for sent in res] for res in res_df ]
+    avg_df = [ np.mean([len(chunk) for chunk in spliting]) for spliting in splitted_df ]
+    df["average_sentence_length"] = np.array(avg_df)
+
     # Readability scores
     dale_chall = np.full(df.shape[0], -1, float)
     flesch = np.full(df.shape[0], -1, float)
