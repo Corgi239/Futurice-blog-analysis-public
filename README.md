@@ -6,7 +6,7 @@ As a means of bolstering sales, marketing, and talent acquisition efforts, the F
 
 As an output of the project, we have constructed an [interactive web page](https://corgi239-futurice-blog-analysis-public-srcguihome-t16z9r.streamlit.app/) that showcases results obtained from the conducted analysis, offers an online blog editing assistant, and houses a rich visualization tool where users can explore relevant statistics about past blogs.
 
-A more comprehensive report can be found in `reports/pdf/Project_Report.pdf`.
+A comprehensive report can be found in `reports/pdf/`.
 
 ## Confidential data
 
