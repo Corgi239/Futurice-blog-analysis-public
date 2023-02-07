@@ -12,6 +12,10 @@ A comprehensive report can be found in `reports/pdf/`.
 
 Some of the data used for this project was provided directly by Futurice under a confidentiality agreement. For the public version of the project, all occurrences of said data were replaced with randomly generated noise, and all conclusions derived from it were redacted from the report and the presentations slides.
 
+## Demo
+
+An [online interactive demo](https://corgi239-futurice-blog-analysis-public-srcguihome-t16z9r.streamlit.app/) is available through Streamlit Could service. If the app has not been opened for a while it might require a minute or two to spin up.
+
 ## Credits
 
 This project has been completed by a team of 6 students for the CS-C3250 - Data Science Project course at Aalto University. The development was supervised by Jorma Laaksonen and Selen Pehlivan from the course team, as well as Rachhek Shrestha and Seth Peters at Futurice.
