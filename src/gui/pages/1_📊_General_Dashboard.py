@@ -125,7 +125,7 @@ with st.expander("Filters") as filtering:
         show_fit = st.checkbox(label='Show fit', value=True)
         fit_mode = st.selectbox(
             label='Fit mode',
-            options=['Single fit', 'Separate fit'],
+            options=['Single fit', 'Categorical fit'],
             disabled=not show_fit
         )
         fit_smoothness = st.slider(
