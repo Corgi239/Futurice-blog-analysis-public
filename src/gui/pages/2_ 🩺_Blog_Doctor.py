@@ -1,7 +1,6 @@
 import streamlit as st
 from nltk.tokenize import sent_tokenize, word_tokenize
 from nltk.sentiment import SentimentIntensityAnalyzer
-import streamlit.components.v1 as components
 import nltk
 import numpy as np
 import pandas as pd
@@ -15,9 +14,7 @@ import textstat
 # Needed for mmr_lift_score
 from pytrends.request import TrendReq 
 from sklearn.feature_extraction.text import CountVectorizer
-from sentence_transformers import SentenceTransformer
 from sklearn.metrics.pairwise import cosine_similarity 
-from datetime import date, timedelta
 
 # Page configuration
 st.set_page_config(
@@ -245,7 +242,7 @@ with input:
                             'start':[int_low], 
                             'stop':[int_hi], 
                             'value' : [value[0]],
-                            'area_label':[r'20-80 percentile region of top 10% blogs'],
+                            'area_label':['20-80 percentile region\nof top 10% blogs'],
                             'line_label':['your blog']
                         })
                         area = alt.Chart(
